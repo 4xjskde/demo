@@ -1,0 +1,185 @@
+\documentclass[12pt,a4paper,two side]{article}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage{enumerate}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\textbf{\textbf{Câu lạc bộ Toán A1}} - \textbf{Hotline:}  \ \textsc{035 290 3286\ -\ 034 761 1986}}
+\fancypagestyle{footer}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0.5pt}\fancyfoot[L]{\textbf{Hotline:} \ \textsc{035 290 3286\ -\ 034 761 1986}}\fancyfoot[R]{\thepage}}
+
+\usepackage{background}
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=0.08,
+	angle=0,
+	contents={%
+		\includegraphics[scale=0.7]{ToKien.jpg}
+	}%
+}
+
+\setlength{\parindent}{0pt}
+\theoremstyle{definition}
+\newtheorem{prob}{Bài}
+\newtheorem{lemma}{Bổ đề}
+\begin{document}
+	\large
+	\thispagestyle{footer}
+	\begin{minipage}{0.3\textwidth}
+		\begin{center}
+			\includegraphics[scale=0.12]{ToKien.jpg}
+		\end{center}
+	\end{minipage}
+	\begin{minipage}{0.7\textwidth}
+		\begin{tcolorbox}[colback=red!5,colframe=red!75!black]
+			\begin{center}
+				{\large \textbf{ĐÁP ÁN BÀI TẬP VỀ NHÀ BUỔI 21}} 
+			\end{center}
+			\tcblower
+			{\large \textbf{Trợ giảng:} Ngô Văn Đăng}
+			\flushleft{\large \textbf{Lớp:} 9H4  \hfill \textbf{\textit{Ngày 10/11/2025}}}
+		\end{tcolorbox}
+	\end{minipage}
+	\vspace{0.5cm}
+\begin{prob}
+Cho tứ giác $ABCD$ nội tiếp đường tròn $(O)$. Gọi $E$ là giao điểm của $AC$ và $BD$. $F$ là giao điểm thứ hai của hai đường tròn $(EAD)$ và $(EBC)$.
+\begin{enumerate}[a)]
+	\item Chứng minh tứ giác $ABOF$ nội tiếp.
+	\item Chứng minh $\widehat{OEF} = 90^{\circ}$.
+\end{enumerate}
+\end{prob}
+\textit{\textbf{Lời giải: }}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{bài1}
+\end{figure}
+a) Ta có: $\widehat{ADE}=\widehat{AFE}$ và $\widehat{EFB}=\widehat{ACB}$\\
+Nên $\widehat{AFE}=\widehat{AFB}=\widehat{AFE}+\widehat{EFB}=2\widehat{ADB}=\widehat{AOB}$\\
+Suy ra $ABOF$ là tứ giác nội tiếp.\\
+b) Ta có: $\widehat{OFB}=\widehat{OAB}=90^\circ -\dfrac{1}{2}\widehat{AOB}=90^\circ - \widehat{ACB}$\\
+và $\widehat{EFB}=\widehat{ECB}$\\
+Suy ra $\widehat{OFE}=\widehat{OFB}+\widehat{BFE}=90^\circ$\\
+
+\begin{prob}
+Cho tam giác nhọn $ABC$ nội tiếp $(O)$, với $AB < AC$. Gọi $AD$ là phân giác góc $A$, cắt $(O)$ tại $K$. Đường thẳng $AC$ cắt đường tròn $(ABD)$ tại $L$ (khác $A$).
+\begin{enumerate}[a)]
+	\item Chứng minh rằng $BL \parallel CK$.
+	\item Qua $L$ kẻ đường thẳng vuông góc với $BC$, cắt $(ABD)$ tại $P$. Chứng minh rằng $B, P, O$ thẳng hàng.
+	\item Đường thẳng $AP$ cắt $(O)$ tại $Q$. Chứng minh rằng $CQ \perp BK$.
+\end{enumerate}
+\end{prob}
+\textit{\textbf{Lời giải: }}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{bài2}
+\end{figure}
+a) Ta có: $\widehat{ALB}=\widehat{ADB}=\dfrac{1}{2}(sdAB+sdKC)=\dfrac{1}{2}(sdAB+sdBK)=\widehat{ACK}$\\
+Suy ra $BL \parallel CK$.\\
+b) Ta có: $\widehat{PBC}=90^\circ-\widehat{BPL}=90^\circ-\widehat{BAC}=\widehat{OBC}$\\
+Suy ra $O,P,B$ thẳng hàng.\\
+c) Gọi $CQ$ cắt $BK$ tại $T$.\\
+Ta có: $\widehat{TQB}+\widehat{TBQ}=\widehat{BAC}+\widehat{DAP}=\dfrac{1}{2}\widehat{BOC}+\widehat{DBO}=90^\circ$\\
+
+\begin{prob}
+Cho tam giác $ABC$ nội tiếp đường tròn $(O)$. Gọi $I$ là tâm nội tiếp. Các tia phân giác $AI, BI, CI$ cắt $(O)$ lần lượt tại $M, N, P$ (khác các đỉnh tương ứng).
+\begin{enumerate}[a)]
+	\item Chứng minh $MB = MC = MI$.
+	\item Chứng minh $I$ là trực tâm tam giác $MNP$.
+	\item Các đường thẳng $MN, MP$ lần lượt cắt $AC, AB$ tại $E, D$. Chứng minh $E, I, D$ thẳng hàng.
+\end{enumerate}
+\end{prob}
+\textit{\textbf{Lời giải: }}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{bài3}
+\end{figure}
+a) Ta có: $\widehat{MIB}=\dfrac{1}{2}(sdAN+sdBM)=\dfrac{1}{2}(sdNC+sdMC)=\widehat{MBI}$\\
+Suy ra $\triangle MIB$ cân tại $M$ nên $MB=MI$ \\
+Mà có $MB=MC$ nên có $MI=MB=MC$\\
+b)
+Tương tự ta có $PI=PB$ nên $PI=PB=PA$\\
+Tương tự cho điểm $N$ ta có: $NA=NC=NI$\\
+Suy ra $NP$ là trung trực của $AI$\\
+Tương tự suy ra $I$ là trực tâm tam giác $MNP$\\
+c) Theo kết quả quen thuộc ta có $PD.PM=PB^2$ nên $PM.PD=PI^2$\\
+Suy ra $\widehat{PID}=\widehat{PMA}=\widehat{PCB}$\\
+Suy ra $ID \parallel BC$\\
+Tương tự ta cũng chứng minh được $IE \parallel BC$\\
+Suy ra $I,D,E$ thẳng hàng.\\
+
+
+
+\begin{prob}
+Cho tam giác $ABC$ nội tiếp đường tròn $(O)$. Điểm $E$ thuộc cung nhỏ $AC$. Đường thẳng $AE$ cắt các tiếp tuyến tại $B$ và $C$ của $(O)$ lần lượt tại $P, Q$. Đường thẳng $BQ$ cắt $CP$ tại $F$.
+\begin{enumerate}[a)]
+	\item Chứng minh $AC \parallel BP$.
+	\item Chứng minh $\triangle BCP \sim \triangle CQB$.
+	\item Chứng minh tứ giác $BPEF$ nội tiếp.
+	\item Chứng minh $EF$ đi qua trung điểm của $BC$.
+\end{enumerate}
+\end{prob}
+\textit{\textbf{Lời giải: }}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{bài4}
+\end{figure}
+a) Ta có: $\widehat{PBA}=\widehat{BAC}=60^\circ$ nên $AC \parallel BP$\\
+b) Tương tự cũng có $AB \parallel QC$\\
+Suy ra $\widehat{APB}=\widehat{CAQ}$ và $\widehat{PAB}=\widehat{AQC}$\\
+Suy ra $\triangle PAB \backsim \triangle AQC (g.g) \Rightarrow \dfrac{AB}{QC}=\dfrac{BP}{AC} \Rightarrow \dfrac{BC}{QC}=\dfrac{BP}{BC}$ và $ \widehat{PBC}=\widehat{BCQ}=120\circ$\\
+Suy ra $\triangle BCP \sim \triangle CQB(c.g.c)$
+c) Ta có: $\widehat{BFP}=\widehat{FBC}+\widehat{FCB}=\widehat{FBC}+\widehat{CQB}=60^\circ$\\
+Và $\widehat{BFP}=\widehat{ACB}=60^\circ$\\
+Suy ra $PEFB$ là tứ giác nội tiếp.\\
+d) Gọi $EF$ cắt $BC$ tại $M$\\
+Ta có: $\widehat{FBM}=\widehat{BPC}=\widehat{BEM}$\\
+Suy ra $\triangle BMF \backsim \triangle EMB (g.g)$\\
+Suy ra $ MB^2=MF.ME$\\
+Tương tự ta cũng chứng minh được $MC^2=ME.MF$\\
+Suy ra $MC=MB$ (đpcm)\\
+
+
+\begin{prob}
+Cho hình thang $ABCD$ với $AD, BC$ là hai cạnh đáy; $BC > AD$, $BC = BD = 1$, $AB = AC, CD < 1$, $\widehat{BAC} + \widehat{BDC} = 180^{\circ}$. Gọi $E$ là điểm đối xứng với $D$ qua $BC$.
+\begin{enumerate}[a)]
+	\item Chứng minh bốn điểm $A, C, E, B$ cùng nằm trên một đường tròn và $\widehat{BEC} = 2\widehat{AEC}$.
+	\item Đường thẳng $AB$ cắt đường thẳng $CD$ tại $K$, đường thẳng $BC$ cắt đường thẳng $AE$ tại $F$. Chứng minh $FA = FD$ và đường thẳng $FD$ tiếp xúc với đường tròn $(ADK)$.
+	\item Tính độ dài cạnh $CD$.
+\end{enumerate}
+\end{prob}
+\textit{\textbf{Lời giải: }}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{bài5}
+\end{figure}
+a) Ta có: $\widehat{BAC}+\widehat{BEC}= \widehat{BAC}+\widehat{BDC}=180^{\circ}$\\
+Suy ra $A,E,C,B$ cùng nằm trên một đường tròn.\\
+Ta có: $\widehat{BEC}=\widehat{AEC}+\widehat{AEB}=\widehat{ACB}+\widehat{ABC}=2\widehat{ABC}=2\widehat{AEC}$\\
+b) Ta có: $\widehat{FAD}=\widehat{AFB}=\widehat{CFE}=\widehat{CFD}=\widehat{FDA}$\\
+Suy ra tam giác $FAD$ cân tại $F$ nên $FA=FD$\\
+Ta có: $\widehat{BKC}=180^\circ -\widehat{KBC}-\widehat{KCB}=180^\circ -\widehat{ABC}-\widehat{ECB}$\\
+$=\dfrac{1}{2}(sdAB+sdCE)=\widehat{AFB}=\widehat{FAD}$\\
+Suy ra $FA$ là tiếp tuyến của $(ADK)$\\
+Tương tự cũng suy ra được $FD$ là tiếp tuyến của $(ADK)$\\
+c)\textit{(Lời giải của bạn Lê Vũ Khánh Linh $9H4$ $ 25-26$ )} \\
+Áp dụng định lí $Ptolemy$ cho tứ giác nội tiếp $ACEB$\\
+Ta có: $AE.BC=AC.BE+AB.CE$\\
+Suy ra $ 2AF=AC(1+CE)$\\
+Suy ra $\dfrac{2}{1+CE}=\dfrac{AC}{AF}=\dfrac{BE}{BF}=\dfrac{BC}{BF}=\dfrac{BF+FC}{BF}=1+\dfrac{FC}{BF}$\\
+Mà ta có $EF$ là phân giác $\widehat{BEC}$ nên $\dfrac{CF}{BF}=\dfrac{CE}{BE}=CE$\\
+Suy ra $\dfrac{2}{1+CE}=1+CE$\\
+Suy ra $ (CE+1)^2=2 \Rightarrow CE+1= \sqrt{2}$\\
+Suy ra $CE=\sqrt{2}-1=CD$\\
+
+\end{document}
